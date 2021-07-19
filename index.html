@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ's Accordion Card</title>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <template id="drop-down">
+        <style>
+            .drop-down{
+                display: flex;
+                flex-direction: column;
+            }
+            .drop-down__content{
+                font-size: 14px;
+                margin: 0;
+            }
+            .header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 0.5rem;
+                border-bottom: 1px solid #000;
+            }
+            .header__title{
+                font-size: 18px;
+                margin: 0;
+            }
+        </style>
+        <aside class="drop-down">
+            <header class="header">
+                <h2 class="header__title">How many team members can I invite?</h2>
+                <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 .799l4 4 4-4" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd"/>
+                </svg>
+            </header>
+            <p class="drop-down__content">No more than 4 people</p>
+        </aside>
+    </template>
+
+    <section>
+        <drop-down></drop-down>
+        <drop-down></drop-down>
+        <drop-down></drop-down>
+    </section>
+    
+</body>
+</html>
